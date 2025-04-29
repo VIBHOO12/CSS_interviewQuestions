@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Interview Questions</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .int{
+            color: green;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 align="center">CSS Interview Questions</h1>
+    <h2 style="background-color: yellow;">Q1=> Difference between flex row and column</h2>
+    <h3><u>flex-direction: row</u></h3>
+    <p>Arranges flex items in a horizontal line, from left to right.  The main axis is horizontal, and the cross axis is vertical. This is the default direction in Flexbox and is commonly used when you want elements side by side.</p>
+    <u>Example-></u>
+    <div class="row">
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+    </div>
+    <h3><u>flex-direction: column</u></h3>
+    <p>flex items are arranged vertically from top to bottom. The main axis is vertical, and the cross axis is horizontal. This direction is useful when you want elements stacked on top of each other.</p>
+    <u>Example-></u>
+    <div class="column">
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+    </div>
+
+    <h2 style="background-color: yellow;">Q2=> Explain inline , internal and external stylesheet</h2>
+    <h3><u>Inline CSS</u></h3>
+    <p>Inline CSS is written directly inside an HTML element's style attribute.
+        It applies styles only to that specific element.</p>
+        <u>Example-></u>
+        <p style="color: red; font-size: 18px;">This is inline css.</p>
+        <h3><u>Internal CSS</u></h3>
+    <p>Internal CSS is written inside a (style) tag in the (head) section of an HTML document.
+It applies styles to the whole page.</p>
+        <u>Example-></u>
+        <p class="int">This is internal css.</p>
+        <h3><u>External CSS</u></h3>
+    <p>External CSS is written in a separate .css file and linked to the HTML using the <link> tag.</p>
+        <u>Example-></u>
+        <p class="ext">This is external css.</p>
+
+
+    <h2 style="background-color: yellow;">Q3=>Justify-content allows you to do what?</h2>
+    <h3><u>Justify-content</u></h3>
+    <p>The justify-content property in CSS is used to align and distribute space between flex items along the main axis of a flex container.It controls how items are positioned horizontally in a row (or vertically in a column, depending on flex-direction).</p>
+    <u>Example-></u>
+    <div class="item">
+        <div id="flexstart" class="item1">1</div>
+        <div id="center" class="item1">2</div>
+        <div id="flexend" class="item1">3</div>
+        <div id="spacebetween" class="item1">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <h2 style="background-color: yellow;">Q4=>Difference between absolute and relative positioning</h2>
+    <h3><u>position: relative</u></h3>
+    <p>Relative Positioning is a CSS technique that allows an element to be adjusted from its normal position. The syntax for relative positioning is position: relative; When you set the top, right, bottom, and left properties of an element with relative positioning, it moves from its original location. However, it’s important to note that other elements on the page will not fill the gap left by the moved element.</p>
+    <u>Example-></u>
+    <div class="relative">
+        This element has position:relative;
+    </div>
+    <h3><u>position: absolute</u></h3>
+    <p>Absolute Position is another CSS technique that adjusts an element’s position relative to its parent. If no parent element is present, the document body is used as the parent. The syntax for absolute positioning is position: absolute;</p>
+    <u>Example-></u>
+    <div class="relative1">
+        This element has position: relative;
+        <div class="absolute">
+            This element has position: absolute;
+        </div>
+    </div>
+
+    <h2 style="background-color: yellow;">Q5=> What is the z-index in CSS?</h2>
+    <h3><u>z-index</u></h3>
+    <p>The z-index property in CSS controls the stacking order of elements. It determines which elements appear on top of others when they overlap.</p>
+    <p>For z-index to work, the element must have a positioning (like relative, absolute, etc.)</p>
+    <u>Example-></u>
+    <div class="contain">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+    <h2>Q6=> What is the difference between padding and margin?</h2>
+    <h3><u>padding</u></h3>
+    <p>Padding creates space inside the element, between the content and the border.</p>
+    <p>It increases the size of the element because it adds space within the element’s border.</p>
+    <div class="pad">padding: 20px;</div>
+    <h3><u>margine</u></h3>
+    <p>Margin creates space outside the element's border. It pushes the element away from surrounding elements.</p>
+    <p>It does not affect the element’s size, only its position relative to other elements.</p>
+    <div class="marg">margine: 30px</div>
+</body>
+</html>

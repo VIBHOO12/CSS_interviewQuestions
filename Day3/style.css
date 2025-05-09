@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+}
+.a{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid black;
+     background-image: conic-gradient(
+         red 0% 20%,
+    orange 20% 40%,
+    yellow 40% 60%,
+    green 60% 80%,
+    blue 80% 100%
+     );
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    opacity: 0.4;
+}
+.effect{
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    cursor: pointer;
+}
+.effect:hover{
+    background-color: palevioletred;
+}
+
+.card {
+ 
+  width: 250px;
+  height: 150px;
+  background-color: aqua;
+  box-shadow:20px 20px 40px rgba(0, 0, 0, 20.2);;
+  border-radius: 15px;
+  text-align: center;
+}
+.card1{
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+     text-align: center;
+    background-color: lightcoral;
+
+}
+.card1:hover{
+    transform: rotateZ(40deg);
+}
